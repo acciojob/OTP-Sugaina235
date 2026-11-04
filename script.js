@@ -15,7 +15,7 @@ codes.forEach((code,idx)=>{
 			if(code.value!==''){
 				code.value='';
 			}else if(codes[idx-1]){
-				codes[idx-1].value='';
+				
 				codes[idx-1].focus();
 			}
 				}
