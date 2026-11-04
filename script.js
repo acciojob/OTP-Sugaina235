@@ -11,12 +11,13 @@ codes.forEach((code,idx)=>{
 				if(codes[idx+1]){
 				codes[idx+1].focus();	
 				}},10); }else if(e.key==='Backspace'){
-			e.preventDefault();
+			
 			if(code.value!==''){
+				e.preventDefault();
 				code.value='';
 			}else if(codes[idx-1]){
-				
-				codes[idx-1].focus();
+		e.preventDefault();
+codes[idx-1].focus();
 			}
 				}
 		
