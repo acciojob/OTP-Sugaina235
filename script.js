@@ -14,11 +14,12 @@ codes.forEach((code,idx) => {
 			}, 10); 
 					  
 		} else if(e.key==='Backspace'){
-			setTimeout(() => {
-			 if(codes[idx-1]){
-codes[idx-1].focus();
-			}
-				}, 10);
+			if (code.value === '' && codes[idx - 1]) {
+                codes[idx - 1].value = '';
+                codes[idx - 1].focus();
+            } else {
+                code.value = '';
+				}
 		}
 		
 	});
